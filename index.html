@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>RAE411 Week2 assignement</h2>
+
+<button onclick="myFunction()">Click me</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+var txt = '{"course":411, "courseName": "Software in Telecommunications", "releaseYear": 2020,"date": 20200923}'
+var obj = JSON.parse(txt);
+document.getElementById("demo").innerHTML = "Course &nbsp"+obj.course+obj.courseName+"&nbsp was active on &nbsp"+obj.date+"&nbsp in &nbsp "+obj.releaseYear;
+}
+</script>
+
+</body>
+</html>
